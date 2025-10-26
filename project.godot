@@ -14,3 +14,8 @@ config/name="SkyPogo"
 run/main_scene="uid://bh1axhchoasxu"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1440
+window/size/viewport_height=810
