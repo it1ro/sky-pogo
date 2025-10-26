@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bh1axhchoasxu"]
+[gd_scene load_steps=7 format=3 uid="uid://bh1axhchoasxu"]
 
 [ext_resource type="Texture2D" uid="uid://dsduw63djbal6" path="res://Assets/Images/4 - free_-_skybox_cliffside_0.hdr" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://bkkog20w2reqv" path="res://Scenes/platform.tscn" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://plb35bwda3vm" path="res://Scenes/player.tscn" id="3_wrm1d"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_qxrlw"]
 panorama = ExtResource("1_ebmjs")
@@ -26,7 +27,10 @@ shadow_enabled = true
 environment = SubResource("Environment_qxrlw")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.88294756, 0.46947157, 0, -0.46947157, 0.88294756, 0, 8, 5.5)
+transform = Transform3D(1, 0, 0, 0, 0.8829476, 0.4694716, 0, -0.4694716, 0.8829476, 0, 8, 7.8240604)
 fov = 53.132256
 
 [node name="Platform" parent="." instance=ExtResource("2_qxrlw")]
+
+[node name="Player" parent="." instance=ExtResource("3_wrm1d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8108919, 0)
